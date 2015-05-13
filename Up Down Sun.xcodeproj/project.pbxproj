@@ -13,6 +13,18 @@
 		278EBE6F1AB8B88500A04506 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278EBE6E1AB8B88500A04506 /* Images.xcassets */; };
 		278EBE721AB8B88500A04506 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278EBE701AB8B88500A04506 /* LaunchScreen.xib */; };
 		278EBE7E1AB8B88600A04506 /* Up_Down_SunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278EBE7D1AB8B88600A04506 /* Up_Down_SunTests.swift */; };
+		27A090901AB9157A00754667 /* SunPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0908A1AB9157A00754667 /* SunPosition.swift */; };
+		27A090911AB9157A00754667 /* MoonPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0908B1AB9157A00754667 /* MoonPosition.swift */; };
+		27A090921AB9157A00754667 /* MoonIllumination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0908C1AB9157A00754667 /* MoonIllumination.swift */; };
+		27A090931AB9157A00754667 /* GeocentricCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0908D1AB9157A00754667 /* GeocentricCoordinates.swift */; };
+		27A090941AB9157A00754667 /* EquatorialCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0908E1AB9157A00754667 /* EquatorialCoordinates.swift */; };
+		27A090951AB9157A00754667 /* suncalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0908F1AB9157A00754667 /* suncalc.swift */; };
+		27A0909C1AB915B500754667 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A090961AB915B500754667 /* Constants.swift */; };
+		27A0909D1AB915B500754667 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A090971AB915B500754667 /* DateUtils.swift */; };
+		27A0909E1AB915B500754667 /* MoonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A090981AB915B500754667 /* MoonUtils.swift */; };
+		27A0909F1AB915B500754667 /* PositionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A090991AB915B500754667 /* PositionUtils.swift */; };
+		27A090A01AB915B500754667 /* SunUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0909A1AB915B500754667 /* SunUtils.swift */; };
+		27A090A11AB915B500754667 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0909B1AB915B500754667 /* TimeUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +48,18 @@
 		278EBE771AB8B88600A04506 /* Up Down SunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Up Down SunTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		278EBE7C1AB8B88600A04506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		278EBE7D1AB8B88600A04506 /* Up_Down_SunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Up_Down_SunTests.swift; sourceTree = "<group>"; };
+		27A0908A1AB9157A00754667 /* SunPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunPosition.swift; sourceTree = "<group>"; };
+		27A0908B1AB9157A00754667 /* MoonPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonPosition.swift; sourceTree = "<group>"; };
+		27A0908C1AB9157A00754667 /* MoonIllumination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonIllumination.swift; sourceTree = "<group>"; };
+		27A0908D1AB9157A00754667 /* GeocentricCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocentricCoordinates.swift; sourceTree = "<group>"; };
+		27A0908E1AB9157A00754667 /* EquatorialCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatorialCoordinates.swift; sourceTree = "<group>"; };
+		27A0908F1AB9157A00754667 /* suncalc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = suncalc.swift; sourceTree = "<group>"; };
+		27A090961AB915B500754667 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		27A090971AB915B500754667 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		27A090981AB915B500754667 /* MoonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonUtils.swift; sourceTree = "<group>"; };
+		27A090991AB915B500754667 /* PositionUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionUtils.swift; sourceTree = "<group>"; };
+		27A0909A1AB915B500754667 /* SunUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunUtils.swift; sourceTree = "<group>"; };
+		27A0909B1AB915B500754667 /* TimeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +101,20 @@
 		278EBE641AB8B88500A04506 /* Up Down Sun */ = {
 			isa = PBXGroup;
 			children = (
-				278EBE671AB8B88500A04506 /* AppDelegate.swift */,
+				27A0908A1AB9157A00754667 /* SunPosition.swift */,
+				27A0908B1AB9157A00754667 /* MoonPosition.swift */,
+				27A0908C1AB9157A00754667 /* MoonIllumination.swift */,
+				27A0908D1AB9157A00754667 /* GeocentricCoordinates.swift */,
+				27A0908E1AB9157A00754667 /* EquatorialCoordinates.swift */,
+				27A0908F1AB9157A00754667 /* suncalc.swift */,
+				27A090961AB915B500754667 /* Constants.swift */,
+				27A090971AB915B500754667 /* DateUtils.swift */,
+				27A090981AB915B500754667 /* MoonUtils.swift */,
+				27A090991AB915B500754667 /* PositionUtils.swift */,
+				27A0909A1AB915B500754667 /* SunUtils.swift */,
+				27A0909B1AB915B500754667 /* TimeUtils.swift */,
 				278EBE691AB8B88500A04506 /* ViewController.swift */,
 				278EBE6B1AB8B88500A04506 /* Main.storyboard */,
-				278EBE6E1AB8B88500A04506 /* Images.xcassets */,
-				278EBE701AB8B88500A04506 /* LaunchScreen.xib */,
 				278EBE651AB8B88500A04506 /* Supporting Files */,
 			);
 			path = "Up Down Sun";
@@ -90,6 +123,9 @@
 		278EBE651AB8B88500A04506 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				278EBE671AB8B88500A04506 /* AppDelegate.swift */,
+				278EBE6E1AB8B88500A04506 /* Images.xcassets */,
+				278EBE701AB8B88500A04506 /* LaunchScreen.xib */,
 				278EBE661AB8B88500A04506 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -212,8 +248,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A090931AB9157A00754667 /* GeocentricCoordinates.swift in Sources */,
+				27A090951AB9157A00754667 /* suncalc.swift in Sources */,
+				27A090941AB9157A00754667 /* EquatorialCoordinates.swift in Sources */,
+				27A0909E1AB915B500754667 /* MoonUtils.swift in Sources */,
+				27A090901AB9157A00754667 /* SunPosition.swift in Sources */,
 				278EBE6A1AB8B88500A04506 /* ViewController.swift in Sources */,
+				27A090A11AB915B500754667 /* TimeUtils.swift in Sources */,
 				278EBE681AB8B88500A04506 /* AppDelegate.swift in Sources */,
+				27A090A01AB915B500754667 /* SunUtils.swift in Sources */,
+				27A090911AB9157A00754667 /* MoonPosition.swift in Sources */,
+				27A0909F1AB915B500754667 /* PositionUtils.swift in Sources */,
+				27A0909D1AB915B500754667 /* DateUtils.swift in Sources */,
+				27A090921AB9157A00754667 /* MoonIllumination.swift in Sources */,
+				27A0909C1AB915B500754667 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +455,7 @@
 				278EBE831AB8B88600A04506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		278EBE841AB8B88600A04506 /* Build configuration list for PBXNativeTarget "Up Down SunTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +464,7 @@
 				278EBE861AB8B88600A04506 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
