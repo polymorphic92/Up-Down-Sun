@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreLocation
-class ViewController: UIViewController , CLLocationManagerDelegate{
+class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFieldDelegate{
 
 
     @IBOutlet weak var lat: UITextField!
@@ -57,10 +57,10 @@ class ViewController: UIViewController , CLLocationManagerDelegate{
     }
     func displayLocationInfo(placemark: CLPlacemark) {
         self.locationManager.stopUpdatingLocation()
-        print(placemark.locality)
-        print(placemark.postalCode)
-        print(placemark.administrativeArea)
-        print(placemark.country)
+//        print(placemark.locality)
+//        print(placemark.postalCode)
+//        print(placemark.administrativeArea)
+//        print(placemark.country)
         let lat =  Double(placemark.location!.coordinate.latitude)
         let long =  Double(placemark.location!.coordinate.longitude)
         calSunTimes(lat,f2: long)
@@ -90,14 +90,36 @@ class ViewController: UIViewController , CLLocationManagerDelegate{
         SetLabel.text = "Sun Set: " + sunsetString
     
         }
-        
-        
-        
-        
-        
-        
     }
-
+    /**
+     * Called when 'return' key pressed. return NO to ignore.
+     */
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    
+    /**
+     * Called when the user click on the view (outside the UITextField).
+     */
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 extension String {
     func toDouble() -> Double? {
