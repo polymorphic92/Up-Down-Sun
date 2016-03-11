@@ -22,7 +22,7 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
     @IBAction func getTimes(sender: UIButton) {
         
         
-        calSunTimes(lat.text!.toDouble()!,f2: long.text!.toDouble()!)
+    calSunTimes(lat.text!.toDouble()!,f2: long.text!.toDouble()!)
         
     }
     override func didReceiveMemoryWarning() {
@@ -54,6 +54,11 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
             }
             
         })
+        
+        
+
+        
+        
     }
     func displayLocationInfo(placemark: CLPlacemark) {
         self.locationManager.stopUpdatingLocation()
@@ -81,9 +86,7 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
         long.text = "\(f2)"
         let sunCalc:SunCalc = SunCalc.getTimes(date, latitude: f1, longitude: f2)  // 43.072226 ,-78.878041
         let formatter:NSDateFormatter = NSDateFormatter()
-//        formatter.dateFormat = "HH:mm"
         formatter.dateFormat = "h:mm a"
-        //formatter.timeZone = NSTimeZone(abbreviation: "GMT")
         let sunriseString:String = formatter.stringFromDate(sunCalc.sunrise)
         let sunsetString:String = formatter.stringFromDate(sunCalc.sunset)
         RiseLabel.text = "Sun Rise: " + sunriseString
@@ -107,20 +110,8 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
         self.view.endEditing(true)
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
+
 extension String {
     func toDouble() -> Double? {
         return NSNumberFormatter().numberFromString(self)?.doubleValue
