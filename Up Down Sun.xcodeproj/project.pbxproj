@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		278A5E0B1C951B9A004930EF /* SunTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278A5E0A1C951B9A004930EF /* SunTimeViewController.swift */; };
 		278EBE681AB8B88500A04506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278EBE671AB8B88500A04506 /* AppDelegate.swift */; };
 		278EBE6A1AB8B88500A04506 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278EBE691AB8B88500A04506 /* ViewController.swift */; };
 		278EBE6D1AB8B88500A04506 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278EBE6B1AB8B88500A04506 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		278A5E0A1C951B9A004930EF /* SunTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunTimeViewController.swift; sourceTree = "<group>"; };
 		278EBE621AB8B88500A04506 /* Up Down Sun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Up Down Sun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		278EBE661AB8B88500A04506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		278EBE671AB8B88500A04506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				27A0909A1AB915B500754667 /* SunUtils.swift */,
 				27A0909B1AB915B500754667 /* TimeUtils.swift */,
 				278EBE691AB8B88500A04506 /* ViewController.swift */,
+				278A5E0A1C951B9A004930EF /* SunTimeViewController.swift */,
 				278EBE6B1AB8B88500A04506 /* Main.storyboard */,
 				278EBE651AB8B88500A04506 /* Supporting Files */,
 			);
@@ -257,6 +260,7 @@
 				27A0909E1AB915B500754667 /* MoonUtils.swift in Sources */,
 				27A090901AB9157A00754667 /* SunPosition.swift in Sources */,
 				278EBE6A1AB8B88500A04506 /* ViewController.swift in Sources */,
+				278A5E0B1C951B9A004930EF /* SunTimeViewController.swift in Sources */,
 				27A090A11AB915B500754667 /* TimeUtils.swift in Sources */,
 				278EBE681AB8B88500A04506 /* AppDelegate.swift in Sources */,
 				27A090A01AB915B500754667 /* SunUtils.swift in Sources */,
