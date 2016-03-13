@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Config-->
+        <!--Configure Time Settings-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Up_Down_Sun" customModuleProvider="target" colorLabel="IBBuiltInLabel-Red" sceneMemberID="viewController">
@@ -38,7 +38,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Q9-V2-qgS">
                                 <rect key="frame" x="156" y="278" width="137" height="30"/>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.70980392156862748" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="NsI-vB-ky0"/>
                                     <constraint firstAttribute="width" constant="137" id="cFI-jd-pAn"/>
@@ -77,7 +77,7 @@
                             <constraint firstItem="2Q9-V2-qgS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="156" id="lsX-g9-jpb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Config" id="15Q-lH-jgt"/>
+                    <navigationItem key="navigationItem" title="Configure Time Settings" id="15Q-lH-jgt"/>
                     <connections>
                         <outlet property="lat" destination="O9n-2s-uGk" id="01N-XK-oAt"/>
                         <outlet property="long" destination="g8S-hD-oUe" id="6oX-HU-KZr"/>
@@ -87,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="1095" y="30"/>
         </scene>
-        <!--Sun Time View Controller-->
+        <!--Sun Rise and Set Times-->
         <scene sceneID="iCl-qX-FcT">
             <objects>
                 <viewController id="bee-zP-d98" customClass="SunTimeViewController" customModule="Up_Down_Sun" customModuleProvider="target" sceneMemberID="viewController">
@@ -124,6 +124,7 @@
                             <constraint firstItem="dnk-le-Hq0" firstAttribute="top" secondItem="oOj-MG-TlU" secondAttribute="bottom" constant="70" id="kJY-9W-SaT"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Sun Rise and Set Times" id="uVi-tc-8W5"/>
                     <connections>
                         <outlet property="sunRiselb" destination="dnk-le-Hq0" id="LF7-ng-4Fm"/>
                         <outlet property="sunSetlb" destination="ZrA-Kf-Thy" id="Sgp-6D-NBH"/>

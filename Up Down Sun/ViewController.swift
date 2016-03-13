@@ -93,6 +93,8 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
             formatter.dateFormat = "h:mm a"
             let sunriseString:String = formatter.stringFromDate(sunCalc.sunrise)
             let sunsetString:String = formatter.stringFromDate(sunCalc.sunset)
+            
+   
             sunTimeView.setTime = "Sun Set: " + sunsetString
             sunTimeView.riseTime = "Sun Rise: " + sunriseString
             
