@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationBarAppearace = UINavigationBar.appearance()
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
         navigationBarAppearace.tintColor = UIColor.whiteColor()
-        navigationBarAppearace.barTintColor = UIColor(hexString: "#820BBB")
+        navigationBarAppearace.barTintColor = UIColor(hexString: "#9C27B0")
         
         // change navigation item title color
         navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.whiteColor()]

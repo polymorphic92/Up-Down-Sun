@@ -14,6 +14,7 @@
 		278EBE6F1AB8B88500A04506 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278EBE6E1AB8B88500A04506 /* Images.xcassets */; };
 		278EBE721AB8B88500A04506 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278EBE701AB8B88500A04506 /* LaunchScreen.xib */; };
 		278EBE7E1AB8B88600A04506 /* Up_Down_SunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278EBE7D1AB8B88600A04506 /* Up_Down_SunTests.swift */; };
+		27905C331C972A0400AF318A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27905C321C972A0400AF318A /* SettingsViewController.swift */; };
 		27A090901AB9157A00754667 /* SunPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0908A1AB9157A00754667 /* SunPosition.swift */; };
 		27A090911AB9157A00754667 /* MoonPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0908B1AB9157A00754667 /* MoonPosition.swift */; };
 		27A090921AB9157A00754667 /* MoonIllumination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0908C1AB9157A00754667 /* MoonIllumination.swift */; };
@@ -50,6 +51,7 @@
 		278EBE771AB8B88600A04506 /* Up Down SunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Up Down SunTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		278EBE7C1AB8B88600A04506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		278EBE7D1AB8B88600A04506 /* Up_Down_SunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Up_Down_SunTests.swift; sourceTree = "<group>"; };
+		27905C321C972A0400AF318A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		27A0908A1AB9157A00754667 /* SunPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunPosition.swift; sourceTree = "<group>"; };
 		27A0908B1AB9157A00754667 /* MoonPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonPosition.swift; sourceTree = "<group>"; };
 		27A0908C1AB9157A00754667 /* MoonIllumination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonIllumination.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				27A0909A1AB915B500754667 /* SunUtils.swift */,
 				27A0909B1AB915B500754667 /* TimeUtils.swift */,
 				278EBE691AB8B88500A04506 /* ViewController.swift */,
+				27905C321C972A0400AF318A /* SettingsViewController.swift */,
 				278A5E0A1C951B9A004930EF /* SunTimeViewController.swift */,
 				278EBE6B1AB8B88500A04506 /* Main.storyboard */,
 				278EBE651AB8B88500A04506 /* Supporting Files */,
@@ -261,6 +264,7 @@
 				27A090901AB9157A00754667 /* SunPosition.swift in Sources */,
 				278EBE6A1AB8B88500A04506 /* ViewController.swift in Sources */,
 				278A5E0B1C951B9A004930EF /* SunTimeViewController.swift in Sources */,
+				27905C331C972A0400AF318A /* SettingsViewController.swift in Sources */,
 				27A090A11AB915B500754667 /* TimeUtils.swift in Sources */,
 				278EBE681AB8B88500A04506 /* AppDelegate.swift in Sources */,
 				27A090A01AB915B500754667 /* SunUtils.swift in Sources */,
@@ -347,6 +351,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				"LD_RUNPATH_SEARCH_PATHS[arch=*]" = "$(inherited)\n@executable_path/Frameworks\n@loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;

@@ -84,21 +84,21 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         
-        let sunTimeView: SunTimeViewController = segue.destinationViewController as! SunTimeViewController
-        if lat.text != nil && long.text != nil{
-            
+//        let sunTimeView: SunTimeViewController = segue.destinationViewController as! SunTimeViewController
+     if (segue.identifier == "toSunTimes"){
+        let sunTimeView = segue.destinationViewController as! SunTimeViewController
 
+        if lat.text != nil && long.text != nil{
             let sunCalc:SunCalc = SunCalc.getTimes(date, latitude: lat.text!.toDouble()!, longitude: long.text!.toDouble()!)
             let formatter:NSDateFormatter = NSDateFormatter()
             formatter.dateFormat = "h:mm a"
             let sunriseString:String = formatter.stringFromDate(sunCalc.sunrise)
             let sunsetString:String = formatter.stringFromDate(sunCalc.sunset)
-            
-   
             sunTimeView.setTime = "Sun Set: " + sunsetString
             sunTimeView.riseTime = "Sun Rise: " + sunriseString
             
         }
+     }
     }
 
     func calSunTimes(f1: Double!, f2: Double!){

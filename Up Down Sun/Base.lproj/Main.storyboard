@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yhi-QD-SeT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E56a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yhi-QD-SeT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -48,7 +48,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bee-zP-d98" kind="show" id="0DM-1x-ag4"/>
+                                    <segue destination="bee-zP-d98" kind="show" identifier="toSunTimes" id="0DM-1x-ag4"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Longitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1J-9M-epc">
@@ -77,7 +77,13 @@
                             <constraint firstItem="2Q9-V2-qgS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="156" id="lsX-g9-jpb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Configure Time Settings" id="15Q-lH-jgt"/>
+                    <navigationItem key="navigationItem" title="Configure Time Settings" id="15Q-lH-jgt">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="nqp-Dx-Nkj">
+                            <connections>
+                                <segue destination="emg-bM-jCw" kind="show" id="7Hq-Bz-U3E"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="lat" destination="O9n-2s-uGk" id="01N-XK-oAt"/>
                         <outlet property="long" destination="g8S-hD-oUe" id="6oX-HU-KZr"/>
@@ -86,6 +92,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1095" y="30"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="VE1-ox-Nkm">
+            <objects>
+                <viewController id="emg-bM-jCw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="grU-7U-aa4"/>
+                        <viewControllerLayoutGuide type="bottom" id="Brn-5W-bLR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ckd-90-DZk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="n1u-Tl-75v"/>
+                        <barButtonItem title="Item" id="d1J-Jf-ZAd"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Settings" id="v44-B1-Bxh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="hJc-g5-0As"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5j-3L-iHV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1893" y="-738"/>
         </scene>
         <!--Sun Rise and Set Times-->
         <scene sceneID="iCl-qX-FcT">
@@ -110,7 +142,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun Set:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrA-Kf-Thy">
-                                <rect key="frame" x="232" y="198" width="64.5" height="20.5"/>
+                                <rect key="frame" x="232" y="198" width="65" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -132,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mP-br-ANs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1863" y="30"/>
+            <point key="canvasLocation" x="1893" y="30"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mfW-BK-gWR">
