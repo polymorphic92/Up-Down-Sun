@@ -9,33 +9,10 @@
 import UIKit
 import CoreLocation
 class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFieldDelegate{
-
-    
-    
-    
-    
     let locationManager = CLLocationManager()
     let date:NSDate = NSDate()
     @IBOutlet weak var lat: UITextField!
     @IBOutlet weak var long: UITextField!
-    
-//    @IBAction func getTimes(sender: UIButton) {
-//        
-//        
-//    calSunTimes(lat.text!.toDouble()!,f2: long.text!.toDouble()!)
-//        
-//    }
-    
-    
-    
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,23 +22,13 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
         self.locationManager.startUpdatingLocation()
         locationManager.requestWhenInUseAuthorization()
         }
+
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        CLGeocoder().reverseGeocodeLocation(manager.location!, completionHandler: { (placemarks, error) -> Void in
-            if (error != nil) {
-                
-                print("Error:" + error!.localizedDescription)
-                return
-            }
-            
-            if placemarks!.count > 0 {
-                let pm = placemarks![0] as CLPlacemark
-                self.displayLocationInfo(pm)
-            }else {
-                
-                print("Error with data");
-            }
-            
-        })
+        let userLocation:CLLocation = locations[0]
+        let long = userLocation.coordinate.longitude;
+        let lat = userLocation.coordinate.latitude;
+
+        calSunTimes(lat,f2: long)
     }
     func displayLocationInfo(placemark: CLPlacemark) {
         self.locationManager.stopUpdatingLocation()
@@ -69,22 +36,8 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
 //        print(placemark.postalCode)
 //        print(placemark.administrativeArea)
 //        print(placemark.country)
-        let lat =  Double(placemark.location!.coordinate.latitude)
-        let long =  Double(placemark.location!.coordinate.longitude)
-        calSunTimes(lat,f2: long)
     }
-    
-    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-        print("Error: " + error.localizedDescription)
-        
-    }
-    
-    
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        
-//        let sunTimeView: SunTimeViewController = segue.destinationViewController as! SunTimeViewController
      if (segue.identifier == "toSunTimes"){
         let sunTimeView = segue.destinationViewController as! SunTimeViewController
 
@@ -102,23 +55,21 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
     }
 
     func calSunTimes(f1: Double!, f2: Double!){
+        self.locationManager.stopUpdatingLocation()
         lat.text = "\(f1)"
         long.text = "\(f2)"
     }
     
+//   important methods
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+        print("Error: " + error.localizedDescription)
+        
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
     /**
      * Called when 'return' key pressed. return NO to ignore.

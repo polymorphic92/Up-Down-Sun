@@ -27,6 +27,7 @@
 		27A0909F1AB915B500754667 /* PositionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A090991AB915B500754667 /* PositionUtils.swift */; };
 		27A090A01AB915B500754667 /* SunUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0909A1AB915B500754667 /* SunUtils.swift */; };
 		27A090A11AB915B500754667 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0909B1AB915B500754667 /* TimeUtils.swift */; };
+		27FB07201C990AC2001CC2CC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FB071F1C990AC2001CC2CC /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		27A090991AB915B500754667 /* PositionUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionUtils.swift; sourceTree = "<group>"; };
 		27A0909A1AB915B500754667 /* SunUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunUtils.swift; sourceTree = "<group>"; };
 		27A0909B1AB915B500754667 /* TimeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeUtils.swift; sourceTree = "<group>"; };
+		27FB071F1C990AC2001CC2CC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27FB07201C990AC2001CC2CC /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +90,7 @@
 		278EBE591AB8B88500A04506 = {
 			isa = PBXGroup;
 			children = (
+				27FB071F1C990AC2001CC2CC /* CoreLocation.framework */,
 				278EBE641AB8B88500A04506 /* Up Down Sun */,
 				278EBE7A1AB8B88600A04506 /* Up Down SunTests */,
 				278EBE631AB8B88500A04506 /* Products */,
