@@ -13,7 +13,16 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
     let date:NSDate = NSDate()
     @IBOutlet weak var lat: UITextField!
     @IBOutlet weak var long: UITextField!
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
+    override func viewWillAppear(animated: Bool) {
+
+    
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.locationManager.delegate = self
@@ -22,10 +31,15 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
         self.locationManager.startUpdatingLocation()
         locationManager.requestWhenInUseAuthorization()
         }
-
+//    override func viewDidAppear(animated: Bool) {
+//        super.viewDidAppear(animated)
+//        
+//    }
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let userLocation:CLLocation = locations[0]
         let long = userLocation.coordinate.longitude;
+        
+        print(userLocation.horizontalAccuracy)
         let lat = userLocation.coordinate.latitude;
 
         calSunTimes(lat,f2: long)
@@ -40,25 +54,24 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
      if (segue.identifier == "toSunTimes"){
         let sunTimeView = segue.destinationViewController as! SunTimeViewController
-
         if lat.text != nil && long.text != nil{
-            let sunCalc:SunCalc = SunCalc.getTimes(date, latitude: lat.text!.toDouble()!, longitude: long.text!.toDouble()!)
+//            let sunCalc:SunCalc = SunCalc.getTimes(date, latitude: lat.text!.toDouble()!, longitude: long.text!.toDouble()!)
+            let sunCalc:SunCalc = SunCalc.getTimes(date, latitude: lat.unwrappedTextDouble, longitude: long.unwrappedTextDouble)
             let formatter:NSDateFormatter = NSDateFormatter()
             formatter.dateFormat = "h:mm a"
             let sunriseString:String = formatter.stringFromDate(sunCalc.sunrise)
             let sunsetString:String = formatter.stringFromDate(sunCalc.sunset)
             sunTimeView.setTime = "Sun Set: " + sunsetString
             sunTimeView.riseTime = "Sun Rise: " + sunriseString
-            
         }
      }
     }
-
     func calSunTimes(f1: Double!, f2: Double!){
         self.locationManager.stopUpdatingLocation()
         lat.text = "\(f1)"
         long.text = "\(f2)"
     }
+
     
 //   important methods
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
@@ -66,10 +79,8 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
+
     
     /**
      * Called when 'return' key pressed. return NO to ignore.
@@ -90,6 +101,11 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
 extension String {
     func toDouble() -> Double? {
         return NSNumberFormatter().numberFromString(self)?.doubleValue
+    }
+}
+extension UITextField {
+    var unwrappedTextDouble: Double {
+        return self.text?.toDouble() ?? 0
     }
 }
 

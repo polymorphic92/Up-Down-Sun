@@ -22,27 +22,20 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g8S-hD-oUe">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g8S-hD-oUe">
                                 <rect key="frame" x="156" y="206" width="428" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSS-wF-i5Z">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSS-wF-i5Z">
                                 <rect key="frame" x="20" y="159" width="77" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="77" id="fWe-bo-Fu6"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Q9-V2-qgS">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Q9-V2-qgS">
                                 <rect key="frame" x="156" y="278" width="137" height="30"/>
                                 <color key="backgroundColor" red="0.9882352941176471" green="0.70980392156862748" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="NsI-vB-ky0"/>
-                                    <constraint firstAttribute="width" constant="137" id="cFI-jd-pAn"/>
-                                </constraints>
                                 <state key="normal" title="Get Times">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -57,30 +50,18 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O9n-2s-uGk">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O9n-2s-uGk">
                                 <rect key="frame" x="156" y="150" width="424" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="2Q9-V2-qgS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="278" id="2qA-Q6-l08"/>
-                            <constraint firstItem="2Q9-V2-qgS" firstAttribute="leading" secondItem="O9n-2s-uGk" secondAttribute="leading" id="6Nt-5R-fRY"/>
-                            <constraint firstItem="O9n-2s-uGk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="86" id="7MF-w4-x1m"/>
-                            <constraint firstItem="VSS-wF-i5Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8BR-Tf-zGe"/>
-                            <constraint firstItem="2Q9-V2-qgS" firstAttribute="leading" secondItem="g8S-hD-oUe" secondAttribute="leading" id="IWn-TX-CoD"/>
-                            <constraint firstItem="O9n-2s-uGk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="S8a-re-N9o"/>
-                            <constraint firstItem="VSS-wF-i5Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="95" id="YSF-26-RiC"/>
-                            <constraint firstItem="g8S-hD-oUe" firstAttribute="top" secondItem="O9n-2s-uGk" secondAttribute="bottom" constant="26" id="fOk-tM-4eT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="g8S-hD-oUe" secondAttribute="trailing" constant="-4" id="hmn-Eb-4A7"/>
-                            <constraint firstItem="2Q9-V2-qgS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="156" id="lsX-g9-jpb"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Configure Time Settings" id="15Q-lH-jgt">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="nqp-Dx-Nkj">
                             <connections>
-                                <segue destination="emg-bM-jCw" kind="show" id="7Hq-Bz-U3E"/>
+                                <segue destination="emg-bM-jCw" kind="show" identifier="mainToSettings" id="7Hq-Bz-U3E"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
