@@ -18,11 +18,6 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    override func viewWillAppear(animated: Bool) {
-
-    
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.locationManager.delegate = self
@@ -31,10 +26,6 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
         self.locationManager.startUpdatingLocation()
         locationManager.requestWhenInUseAuthorization()
         }
-//    override func viewDidAppear(animated: Bool) {
-//        super.viewDidAppear(animated)
-//        
-//    }
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let userLocation:CLLocation = locations[0]
         let long = userLocation.coordinate.longitude;
@@ -44,13 +35,13 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
 
         calSunTimes(lat,f2: long)
     }
-    func displayLocationInfo(placemark: CLPlacemark) {
-        self.locationManager.stopUpdatingLocation()
-//        print(placemark.locality)
-//        print(placemark.postalCode)
-//        print(placemark.administrativeArea)
-//        print(placemark.country)
-    }
+//    func displayLocationInfo(placemark: CLPlacemark) {
+//        self.locationManager.stopUpdatingLocation()
+////        print(placemark.locality)
+////        print(placemark.postalCode)
+////        print(placemark.administrativeArea)
+////        print(placemark.country)
+//    }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
      if (segue.identifier == "toSunTimes"){
         let sunTimeView = segue.destinationViewController as! SunTimeViewController

@@ -1,0 +1,10 @@
+framework module CelestialSpheres {
+  umbrella header "CelestialSpheres.h"
+
+  export *
+  module * { export * }
+}
+
+module CelestialSpheres.Swift {
+    header "CelestialSpheres-Swift.h"
+}

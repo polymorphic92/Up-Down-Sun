@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2749F8071C9A50BF00194588 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2749F8061C9A50BF00194588 /* NotificationCenter.framework */; };
+		2749F80A1C9A50BF00194588 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749F8091C9A50BF00194588 /* TodayViewController.swift */; };
+		2749F80D1C9A50BF00194588 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2749F80B1C9A50BF00194588 /* MainInterface.storyboard */; };
+		2749F8111C9A50C000194588 /* Up Down Sun Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2749F8041C9A50BF00194588 /* Up Down Sun Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		278A5E0B1C951B9A004930EF /* SunTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278A5E0A1C951B9A004930EF /* SunTimeViewController.swift */; };
 		278EBE681AB8B88500A04506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278EBE671AB8B88500A04506 /* AppDelegate.swift */; };
 		278EBE6A1AB8B88500A04506 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278EBE691AB8B88500A04506 /* ViewController.swift */; };
@@ -27,10 +31,22 @@
 		27A0909F1AB915B500754667 /* PositionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A090991AB915B500754667 /* PositionUtils.swift */; };
 		27A090A01AB915B500754667 /* SunUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0909A1AB915B500754667 /* SunUtils.swift */; };
 		27A090A11AB915B500754667 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0909B1AB915B500754667 /* TimeUtils.swift */; };
+		27AC54521C9A665100CE721D /* CelestialSpheres.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AC54511C9A665100CE721D /* CelestialSpheres.framework */; };
+		27AC54531C9A665100CE721D /* CelestialSpheres.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AC54511C9A665100CE721D /* CelestialSpheres.framework */; };
+		27AC54541C9A665100CE721D /* CelestialSpheres.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AC54511C9A665100CE721D /* CelestialSpheres.framework */; };
+		27AC54551C9A665700CE721D /* CelestialSpheres.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AC54511C9A665100CE721D /* CelestialSpheres.framework */; };
+		27AC54561C9A665700CE721D /* CelestialSpheres.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27AC54511C9A665100CE721D /* CelestialSpheres.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27FB07201C990AC2001CC2CC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FB071F1C990AC2001CC2CC /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2749F80F1C9A50C000194588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 278EBE5A1AB8B88500A04506 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2749F8031C9A50BF00194588;
+			remoteInfo = "Up Down Sun Extension";
+		};
 		278EBE781AB8B88600A04506 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 278EBE5A1AB8B88500A04506 /* Project object */;
@@ -40,7 +56,37 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2749F8151C9A50C000194588 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2749F8111C9A50C000194588 /* Up Down Sun Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2749F87B1C9A5EA900194588 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				27AC54561C9A665700CE721D /* CelestialSpheres.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2749F8041C9A50BF00194588 /* Up Down Sun Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Up Down Sun Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2749F8061C9A50BF00194588 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		2749F8091C9A50BF00194588 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		2749F80C1C9A50BF00194588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2749F80E1C9A50BF00194588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		278A5E0A1C951B9A004930EF /* SunTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunTimeViewController.swift; sourceTree = "<group>"; };
 		278EBE621AB8B88500A04506 /* Up Down Sun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Up Down Sun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		278EBE661AB8B88500A04506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,14 +111,26 @@
 		27A090991AB915B500754667 /* PositionUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionUtils.swift; sourceTree = "<group>"; };
 		27A0909A1AB915B500754667 /* SunUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunUtils.swift; sourceTree = "<group>"; };
 		27A0909B1AB915B500754667 /* TimeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeUtils.swift; sourceTree = "<group>"; };
+		27AC54511C9A665100CE721D /* CelestialSpheres.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CelestialSpheres.framework; sourceTree = "<group>"; };
 		27FB071F1C990AC2001CC2CC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2749F8011C9A50BF00194588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27AC54541C9A665100CE721D /* CelestialSpheres.framework in Frameworks */,
+				2749F8071C9A50BF00194588 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		278EBE5F1AB8B88500A04506 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27AC54521C9A665100CE721D /* CelestialSpheres.framework in Frameworks */,
+				27AC54551C9A665700CE721D /* CelestialSpheres.framework in Frameworks */,
 				27FB07201C990AC2001CC2CC /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,18 +139,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27AC54531C9A665100CE721D /* CelestialSpheres.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2749F8051C9A50BF00194588 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2749F8061C9A50BF00194588 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2749F8081C9A50BF00194588 /* Up Down Sun Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2749F8091C9A50BF00194588 /* TodayViewController.swift */,
+				2749F80B1C9A50BF00194588 /* MainInterface.storyboard */,
+				2749F80E1C9A50BF00194588 /* Info.plist */,
+			);
+			path = "Up Down Sun Extension";
+			sourceTree = "<group>";
+		};
 		278EBE591AB8B88500A04506 = {
 			isa = PBXGroup;
 			children = (
+				27AC54511C9A665100CE721D /* CelestialSpheres.framework */,
 				27FB071F1C990AC2001CC2CC /* CoreLocation.framework */,
 				278EBE641AB8B88500A04506 /* Up Down Sun */,
 				278EBE7A1AB8B88600A04506 /* Up Down SunTests */,
+				2749F8081C9A50BF00194588 /* Up Down Sun Extension */,
+				2749F8051C9A50BF00194588 /* Frameworks */,
 				278EBE631AB8B88500A04506 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +182,7 @@
 			children = (
 				278EBE621AB8B88500A04506 /* Up Down Sun.app */,
 				278EBE771AB8B88600A04506 /* Up Down SunTests.xctest */,
+				2749F8041C9A50BF00194588 /* Up Down Sun Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,6 +242,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2749F8031C9A50BF00194588 /* Up Down Sun Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2749F8141C9A50C000194588 /* Build configuration list for PBXNativeTarget "Up Down Sun Extension" */;
+			buildPhases = (
+				2749F8001C9A50BF00194588 /* Sources */,
+				2749F8011C9A50BF00194588 /* Frameworks */,
+				2749F8021C9A50BF00194588 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Up Down Sun Extension";
+			productName = "Up Down Sun Extension";
+			productReference = 2749F8041C9A50BF00194588 /* Up Down Sun Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		278EBE611AB8B88500A04506 /* Up Down Sun */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 278EBE811AB8B88600A04506 /* Build configuration list for PBXNativeTarget "Up Down Sun" */;
@@ -168,10 +266,13 @@
 				278EBE5E1AB8B88500A04506 /* Sources */,
 				278EBE5F1AB8B88500A04506 /* Frameworks */,
 				278EBE601AB8B88500A04506 /* Resources */,
+				2749F8151C9A50C000194588 /* Embed App Extensions */,
+				2749F87B1C9A5EA900194588 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2749F8101C9A50C000194588 /* PBXTargetDependency */,
 			);
 			name = "Up Down Sun";
 			productName = "Up Down Sun";
@@ -207,6 +308,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Kyle Braham";
 				TargetAttributes = {
+					2749F8031C9A50BF00194588 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = NLFN6FWU8J;
+					};
 					278EBE611AB8B88500A04506 = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = NLFN6FWU8J;
@@ -232,11 +337,20 @@
 			targets = (
 				278EBE611AB8B88500A04506 /* Up Down Sun */,
 				278EBE761AB8B88600A04506 /* Up Down SunTests */,
+				2749F8031C9A50BF00194588 /* Up Down Sun Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2749F8021C9A50BF00194588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2749F80D1C9A50BF00194588 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		278EBE601AB8B88500A04506 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,6 +371,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2749F8001C9A50BF00194588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2749F80A1C9A50BF00194588 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		278EBE5E1AB8B88500A04506 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,6 +413,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2749F8101C9A50C000194588 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2749F8031C9A50BF00194588 /* Up Down Sun Extension */;
+			targetProxy = 2749F80F1C9A50C000194588 /* PBXContainerItemProxy */;
+		};
 		278EBE791AB8B88600A04506 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 278EBE611AB8B88500A04506 /* Up Down Sun */;
@@ -299,6 +426,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		2749F80B1C9A50BF00194588 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2749F80C1C9A50BF00194588 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		278EBE6B1AB8B88500A04506 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -318,6 +453,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2749F8121C9A50C000194588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kyle Braham (64XBN9K5CJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Up Down Sun Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kb.Up-Down-Sun.Up-Down-Sun-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2749F8131C9A50C000194588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kyle Braham (64XBN9K5CJ)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Up Down Sun Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kb.Up-Down-Sun.Up-Down-Sun-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		278EBE7F1AB8B88600A04506 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -407,6 +584,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Kyle Braham (64XBN9K5CJ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Up Down Sun/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -422,6 +604,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Kyle Braham (64XBN9K5CJ)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Up Down Sun/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -438,6 +625,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -458,6 +646,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Up Down SunTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -470,6 +659,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2749F8141C9A50C000194588 /* Build configuration list for PBXNativeTarget "Up Down Sun Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2749F8121C9A50C000194588 /* Debug */,
+				2749F8131C9A50C000194588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		278EBE5D1AB8B88500A04506 /* Build configuration list for PBXProject "Up Down Sun" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
