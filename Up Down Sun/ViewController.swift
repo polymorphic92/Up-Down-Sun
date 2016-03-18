@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import CelestialSpheres
 class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFieldDelegate{
     let locationManager = CLLocationManager()
     let date:NSDate = NSDate()
@@ -35,18 +36,10 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
 
         calSunTimes(lat,f2: long)
     }
-//    func displayLocationInfo(placemark: CLPlacemark) {
-//        self.locationManager.stopUpdatingLocation()
-////        print(placemark.locality)
-////        print(placemark.postalCode)
-////        print(placemark.administrativeArea)
-////        print(placemark.country)
-//    }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
      if (segue.identifier == "toSunTimes"){
         let sunTimeView = segue.destinationViewController as! SunTimeViewController
         if lat.text != nil && long.text != nil{
-//            let sunCalc:SunCalc = SunCalc.getTimes(date, latitude: lat.text!.toDouble()!, longitude: long.text!.toDouble()!)
             let sunCalc:SunCalc = SunCalc.getTimes(date, latitude: lat.unwrappedTextDouble, longitude: long.unwrappedTextDouble)
             let formatter:NSDateFormatter = NSDateFormatter()
             formatter.dateFormat = "h:mm a"
@@ -54,6 +47,9 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
             let sunsetString:String = formatter.stringFromDate(sunCalc.sunset)
             sunTimeView.setTime = "Sun Set: " + sunsetString
             sunTimeView.riseTime = "Sun Rise: " + sunriseString
+            let bundleInfoDict: NSDictionary = NSBundle.mainBundle().infoDictionary!
+            let appName = bundleInfoDict["CFBundleName"] as! String
+            print (appName)
         }
      }
     }
@@ -69,10 +65,6 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
         print("Error: " + error.localizedDescription)
         
     }
-    
-
-
-    
     /**
      * Called when 'return' key pressed. return NO to ignore.
      */

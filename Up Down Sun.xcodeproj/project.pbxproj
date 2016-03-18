@@ -19,23 +19,11 @@
 		278EBE721AB8B88500A04506 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278EBE701AB8B88500A04506 /* LaunchScreen.xib */; };
 		278EBE7E1AB8B88600A04506 /* Up_Down_SunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278EBE7D1AB8B88600A04506 /* Up_Down_SunTests.swift */; };
 		27905C331C972A0400AF318A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27905C321C972A0400AF318A /* SettingsViewController.swift */; };
-		27A090901AB9157A00754667 /* SunPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0908A1AB9157A00754667 /* SunPosition.swift */; };
-		27A090911AB9157A00754667 /* MoonPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0908B1AB9157A00754667 /* MoonPosition.swift */; };
-		27A090921AB9157A00754667 /* MoonIllumination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0908C1AB9157A00754667 /* MoonIllumination.swift */; };
-		27A090931AB9157A00754667 /* GeocentricCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0908D1AB9157A00754667 /* GeocentricCoordinates.swift */; };
-		27A090941AB9157A00754667 /* EquatorialCoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0908E1AB9157A00754667 /* EquatorialCoordinates.swift */; };
-		27A090951AB9157A00754667 /* suncalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0908F1AB9157A00754667 /* suncalc.swift */; };
-		27A0909C1AB915B500754667 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A090961AB915B500754667 /* Constants.swift */; };
-		27A0909D1AB915B500754667 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A090971AB915B500754667 /* DateUtils.swift */; };
-		27A0909E1AB915B500754667 /* MoonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A090981AB915B500754667 /* MoonUtils.swift */; };
-		27A0909F1AB915B500754667 /* PositionUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A090991AB915B500754667 /* PositionUtils.swift */; };
-		27A090A01AB915B500754667 /* SunUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0909A1AB915B500754667 /* SunUtils.swift */; };
-		27A090A11AB915B500754667 /* TimeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0909B1AB915B500754667 /* TimeUtils.swift */; };
-		27AC54521C9A665100CE721D /* CelestialSpheres.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AC54511C9A665100CE721D /* CelestialSpheres.framework */; };
-		27AC54531C9A665100CE721D /* CelestialSpheres.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AC54511C9A665100CE721D /* CelestialSpheres.framework */; };
-		27AC54541C9A665100CE721D /* CelestialSpheres.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AC54511C9A665100CE721D /* CelestialSpheres.framework */; };
-		27AC54551C9A665700CE721D /* CelestialSpheres.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AC54511C9A665100CE721D /* CelestialSpheres.framework */; };
-		27AC54561C9A665700CE721D /* CelestialSpheres.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27AC54511C9A665100CE721D /* CelestialSpheres.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		27AB9BA81C9BA1A70028FAB3 /* CelestialSpheres.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AB9BA71C9BA1A70028FAB3 /* CelestialSpheres.framework */; };
+		27AB9BA91C9BA1A70028FAB3 /* CelestialSpheres.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AB9BA71C9BA1A70028FAB3 /* CelestialSpheres.framework */; };
+		27AB9BAA1C9BA1A70028FAB3 /* CelestialSpheres.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AB9BA71C9BA1A70028FAB3 /* CelestialSpheres.framework */; };
+		27AB9BAB1C9BA1AD0028FAB3 /* CelestialSpheres.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AB9BA71C9BA1A70028FAB3 /* CelestialSpheres.framework */; };
+		27AB9BAC1C9BA1AD0028FAB3 /* CelestialSpheres.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27AB9BA71C9BA1A70028FAB3 /* CelestialSpheres.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27FB07201C990AC2001CC2CC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FB071F1C990AC2001CC2CC /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,7 +62,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				27AC54561C9A665700CE721D /* CelestialSpheres.framework in Embed Frameworks */,
+				27AB9BAC1C9BA1AD0028FAB3 /* CelestialSpheres.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,7 +76,7 @@
 		2749F80C1C9A50BF00194588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		2749F80E1C9A50BF00194588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		278A5E0A1C951B9A004930EF /* SunTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunTimeViewController.swift; sourceTree = "<group>"; };
-		278EBE621AB8B88500A04506 /* Up Down Sun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Up Down Sun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		278EBE621AB8B88500A04506 /* UpDownSun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpDownSun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		278EBE661AB8B88500A04506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		278EBE671AB8B88500A04506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		278EBE691AB8B88500A04506 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,19 +87,7 @@
 		278EBE7C1AB8B88600A04506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		278EBE7D1AB8B88600A04506 /* Up_Down_SunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Up_Down_SunTests.swift; sourceTree = "<group>"; };
 		27905C321C972A0400AF318A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		27A0908A1AB9157A00754667 /* SunPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunPosition.swift; sourceTree = "<group>"; };
-		27A0908B1AB9157A00754667 /* MoonPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonPosition.swift; sourceTree = "<group>"; };
-		27A0908C1AB9157A00754667 /* MoonIllumination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonIllumination.swift; sourceTree = "<group>"; };
-		27A0908D1AB9157A00754667 /* GeocentricCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocentricCoordinates.swift; sourceTree = "<group>"; };
-		27A0908E1AB9157A00754667 /* EquatorialCoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatorialCoordinates.swift; sourceTree = "<group>"; };
-		27A0908F1AB9157A00754667 /* suncalc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = suncalc.swift; sourceTree = "<group>"; };
-		27A090961AB915B500754667 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		27A090971AB915B500754667 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
-		27A090981AB915B500754667 /* MoonUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonUtils.swift; sourceTree = "<group>"; };
-		27A090991AB915B500754667 /* PositionUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionUtils.swift; sourceTree = "<group>"; };
-		27A0909A1AB915B500754667 /* SunUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunUtils.swift; sourceTree = "<group>"; };
-		27A0909B1AB915B500754667 /* TimeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeUtils.swift; sourceTree = "<group>"; };
-		27AC54511C9A665100CE721D /* CelestialSpheres.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CelestialSpheres.framework; sourceTree = "<group>"; };
+		27AB9BA71C9BA1A70028FAB3 /* CelestialSpheres.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CelestialSpheres.framework; sourceTree = "<group>"; };
 		27FB071F1C990AC2001CC2CC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -120,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27AC54541C9A665100CE721D /* CelestialSpheres.framework in Frameworks */,
+				27AB9BAA1C9BA1A70028FAB3 /* CelestialSpheres.framework in Frameworks */,
 				2749F8071C9A50BF00194588 /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,8 +105,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27AC54521C9A665100CE721D /* CelestialSpheres.framework in Frameworks */,
-				27AC54551C9A665700CE721D /* CelestialSpheres.framework in Frameworks */,
+				27AB9BA81C9BA1A70028FAB3 /* CelestialSpheres.framework in Frameworks */,
+				27AB9BAB1C9BA1AD0028FAB3 /* CelestialSpheres.framework in Frameworks */,
 				27FB07201C990AC2001CC2CC /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27AC54531C9A665100CE721D /* CelestialSpheres.framework in Frameworks */,
+				27AB9BA91C9BA1A70028FAB3 /* CelestialSpheres.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +143,7 @@
 		278EBE591AB8B88500A04506 = {
 			isa = PBXGroup;
 			children = (
-				27AC54511C9A665100CE721D /* CelestialSpheres.framework */,
+				27AB9BA71C9BA1A70028FAB3 /* CelestialSpheres.framework */,
 				27FB071F1C990AC2001CC2CC /* CoreLocation.framework */,
 				278EBE641AB8B88500A04506 /* Up Down Sun */,
 				278EBE7A1AB8B88600A04506 /* Up Down SunTests */,
@@ -180,7 +156,7 @@
 		278EBE631AB8B88500A04506 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				278EBE621AB8B88500A04506 /* Up Down Sun.app */,
+				278EBE621AB8B88500A04506 /* UpDownSun.app */,
 				278EBE771AB8B88600A04506 /* Up Down SunTests.xctest */,
 				2749F8041C9A50BF00194588 /* Up Down Sun Extension.appex */,
 			);
@@ -190,18 +166,6 @@
 		278EBE641AB8B88500A04506 /* Up Down Sun */ = {
 			isa = PBXGroup;
 			children = (
-				27A0908A1AB9157A00754667 /* SunPosition.swift */,
-				27A0908B1AB9157A00754667 /* MoonPosition.swift */,
-				27A0908C1AB9157A00754667 /* MoonIllumination.swift */,
-				27A0908D1AB9157A00754667 /* GeocentricCoordinates.swift */,
-				27A0908E1AB9157A00754667 /* EquatorialCoordinates.swift */,
-				27A0908F1AB9157A00754667 /* suncalc.swift */,
-				27A090961AB915B500754667 /* Constants.swift */,
-				27A090971AB915B500754667 /* DateUtils.swift */,
-				27A090981AB915B500754667 /* MoonUtils.swift */,
-				27A090991AB915B500754667 /* PositionUtils.swift */,
-				27A0909A1AB915B500754667 /* SunUtils.swift */,
-				27A0909B1AB915B500754667 /* TimeUtils.swift */,
 				278EBE691AB8B88500A04506 /* ViewController.swift */,
 				27905C321C972A0400AF318A /* SettingsViewController.swift */,
 				278A5E0A1C951B9A004930EF /* SunTimeViewController.swift */,
@@ -276,7 +240,7 @@
 			);
 			name = "Up Down Sun";
 			productName = "Up Down Sun";
-			productReference = 278EBE621AB8B88500A04506 /* Up Down Sun.app */;
+			productReference = 278EBE621AB8B88500A04506 /* UpDownSun.app */;
 			productType = "com.apple.product-type.application";
 		};
 		278EBE761AB8B88600A04506 /* Up Down SunTests */ = {
@@ -383,22 +347,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27A090931AB9157A00754667 /* GeocentricCoordinates.swift in Sources */,
-				27A090951AB9157A00754667 /* suncalc.swift in Sources */,
-				27A090941AB9157A00754667 /* EquatorialCoordinates.swift in Sources */,
-				27A0909E1AB915B500754667 /* MoonUtils.swift in Sources */,
-				27A090901AB9157A00754667 /* SunPosition.swift in Sources */,
 				278EBE6A1AB8B88500A04506 /* ViewController.swift in Sources */,
 				278A5E0B1C951B9A004930EF /* SunTimeViewController.swift in Sources */,
 				27905C331C972A0400AF318A /* SettingsViewController.swift in Sources */,
-				27A090A11AB915B500754667 /* TimeUtils.swift in Sources */,
 				278EBE681AB8B88500A04506 /* AppDelegate.swift in Sources */,
-				27A090A01AB915B500754667 /* SunUtils.swift in Sources */,
-				27A090911AB9157A00754667 /* MoonPosition.swift in Sources */,
-				27A0909F1AB915B500754667 /* PositionUtils.swift in Sources */,
-				27A0909D1AB915B500754667 /* DateUtils.swift in Sources */,
-				27A090921AB9157A00754667 /* MoonIllumination.swift in Sources */,
-				27A0909C1AB915B500754667 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +420,7 @@
 				INFOPLIST_FILE = "Up Down Sun Extension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kb.Up-Down-Sun.Up-Down-Sun-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kb.UpDownSun.Up-Down-Sun-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -489,7 +441,7 @@
 				INFOPLIST_FILE = "Up Down Sun Extension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kb.Up-Down-Sun.Up-Down-Sun-Extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kb.UpDownSun.Up-Down-Sun-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -590,10 +542,10 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Up Down Sun/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kb.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UpDownSun;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -610,10 +562,10 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Up Down Sun/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kb.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = UpDownSun;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;

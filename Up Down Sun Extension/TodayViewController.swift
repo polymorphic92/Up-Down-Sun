@@ -14,7 +14,10 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
         let locationManager = CLLocationManager()
         let formatter:NSDateFormatter = NSDateFormatter()
         let date:NSDate = NSDate()
-    @IBOutlet weak var test: UILabel!
+
+
+    @IBOutlet weak var sunRiseTodayLb: UILabel!
+    @IBOutlet weak var sunSetTodayLb: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
@@ -29,18 +32,12 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
         let userLocation:CLLocation = locations[0]
         let long = userLocation.coordinate.longitude;
         let lat = userLocation.coordinate.latitude;
-//        let suncal:SunCalc = SunCalc(date: <#T##NSDate#>, latitude: lat, longitude: long)
-         let suncal:SunCalc = SunCalc.getTimes(date, latitude: lat, longitude: long)
+        let suncal:SunCalc = SunCalc(date: date, latitude: lat, longitude: long)
         formatter.dateFormat = "h:mm a"
         let sunriseString:String = formatter.stringFromDate(suncal.sunrise)
         let sunsetString:String = formatter.stringFromDate(suncal.sunset)
-        test.text = "Sun Rise:"+sunriseString + " Sun Set" + sunsetString
-        
-//        let sunCalc:SunCalc = SunCalc.getTimes(date, latitude: lat.unwrappedTextDouble, longitude: long.unwrappedTextDouble)
-//        
-//        formatter.dateFormat = "h:mm a"
-//        let sunriseString:String = formatter.stringFromDate(sunCalc.sunrise)
-//        let sunsetString:String = formatter.stringFromDate(sunCalc.sunset)
+        sunRiseTodayLb.text = "Sun Rise: "+sunriseString
+        sunSetTodayLb.text  =  "Sun Set: " + sunsetString
 
     }
     
@@ -50,13 +47,27 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
     }
     
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
-        // Perform any setup necessary in order to update the view.
-
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-
         completionHandler(NCUpdateResult.NewData)
     }
-    
+//    @IBAction func openButtonPressed(){
+//        
+//        var url =  NSURL(string:"todayExtensionSample://")
+//        
+//        self.extensionContext?.openURL(url, completionHandler:{(success: Bool) -> Void in
+//            println("task done!")
+//        })
+//    }
+    @IBAction func openAppbtn(sender: UIButton) {
+        let myAppUrl = NSURL(string: "UpDownSun://")!
+        print(myAppUrl)
+        extensionContext?.openURL(myAppUrl, completionHandler: { (success) in
+            if (!success) {
+                print("Need to fix")
+                
+                
+                
+
+            }
+        })
+    }
 }

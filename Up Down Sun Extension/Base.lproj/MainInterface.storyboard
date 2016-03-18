@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Today View Controller-->
@@ -14,30 +15,64 @@
                         <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzM-u7-tCu">
-                                <rect key="frame" x="6" y="8" width="306" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Sun Set:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Yf-90-bo9">
+                                <rect key="frame" x="16" y="46" width="292" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="292" id="UE1-R2-4p9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.98823529409999999" green="0.70980392160000005" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AiD-0v-irq">
+                                <rect key="frame" x="16" y="75" width="66" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="dRR-Uo-Trg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                                <state key="normal" title="Open App">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="openAppbtn:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="tmx-m8-KVg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun Rise:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxk-WR-jew">
+                                <rect key="frame" x="16" y="13" width="296" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="296" id="sZk-L0-wSU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.98823529409999999" green="0.70980392160000005" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="dxk-WR-jew" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="10y-yC-YwN"/>
+                            <constraint firstItem="1Yf-90-bo9" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="1OQ-HG-N6n"/>
+                            <constraint firstItem="AiD-0v-irq" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="J1U-N3-cju"/>
+                            <constraint firstItem="AiD-0v-irq" firstAttribute="top" secondItem="1Yf-90-bo9" secondAttribute="bottom" constant="8" id="OHh-aq-bcC"/>
+                            <constraint firstItem="dxk-WR-jew" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="13" id="Yrg-o8-TR6"/>
+                            <constraint firstItem="1Yf-90-bo9" firstAttribute="top" secondItem="dxk-WR-jew" secondAttribute="bottom" constant="13" id="jLz-dZ-AyV"/>
+                        </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="37"/>
+                    <size key="freeformSize" width="320" height="120"/>
                     <connections>
-                        <outlet property="test" destination="xzM-u7-tCu" id="0E5-8R-n0O"/>
+                        <outlet property="sunRiseTodayLb" destination="dxk-WR-jew" id="F7c-e9-X0N"/>
+                        <outlet property="sunSetTodayLb" destination="1Yf-90-bo9" id="ms8-15-PNg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="284.5"/>
+            <point key="canvasLocation" x="516" y="284"/>
         </scene>
     </scenes>
 </document>
