@@ -30,7 +30,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "278EBE611AB8B88500A04506"
-               BuildableName = "Up Down Sun.app"
+               BuildableName = "UpDownSun.app"
                BlueprintName = "Up Down Sun"
                ReferencedContainer = "container:Up Down Sun.xcodeproj">
             </BuildableReference>
@@ -72,7 +72,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "278EBE611AB8B88500A04506"
-            BuildableName = "Up Down Sun.app"
+            BuildableName = "UpDownSun.app"
             BlueprintName = "Up Down Sun"
             ReferencedContainer = "container:Up Down Sun.xcodeproj">
          </BuildableReference>
@@ -92,7 +92,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "278EBE611AB8B88500A04506"
-            BuildableName = "Up Down Sun.app"
+            BuildableName = "UpDownSun.app"
             BlueprintName = "Up Down Sun"
             ReferencedContainer = "container:Up Down Sun.xcodeproj">
          </BuildableReference>

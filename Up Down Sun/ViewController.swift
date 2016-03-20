@@ -30,8 +30,6 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let userLocation:CLLocation = locations[0]
         let long = userLocation.coordinate.longitude;
-        
-        print(userLocation.horizontalAccuracy)
         let lat = userLocation.coordinate.latitude;
 
         calSunTimes(lat,f2: long)
@@ -40,7 +38,8 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
      if (segue.identifier == "toSunTimes"){
         let sunTimeView = segue.destinationViewController as! SunTimeViewController
         if lat.text != nil && long.text != nil{
-            let sunCalc:SunCalc = SunCalc.getTimes(date, latitude: lat.unwrappedTextDouble, longitude: long.unwrappedTextDouble)
+//            let sunCalc:SunCalc = SunCalc.getTimes(date, latitude: lat.unwrappedTextDouble, longitude: long.unwrappedTextDouble)
+            let sunCalc:SunCalc = SunCalc.getTimes(date, latitude: 0.0, longitude: 0.0)
             let formatter:NSDateFormatter = NSDateFormatter()
             formatter.dateFormat = "h:mm a"
             let sunriseString:String = formatter.stringFromDate(sunCalc.sunrise)

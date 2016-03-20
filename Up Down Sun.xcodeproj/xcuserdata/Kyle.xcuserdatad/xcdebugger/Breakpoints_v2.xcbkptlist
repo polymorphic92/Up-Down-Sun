@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Up Down Sun Extension/TodayViewController.swift"
-            timestampString = "479967452.191162"
+            timestampString = "480135992.111067"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "openAppbtn(_:)"
             landmarkType = "5">
          </BreakpointContent>
