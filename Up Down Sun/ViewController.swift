@@ -9,11 +9,14 @@
 import UIKit
 import CoreLocation
 import CelestialSpheres
-class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFieldDelegate{
+class ViewController: UIViewController , CLLocationManagerDelegate{
     let locationManager = CLLocationManager()
     let date:NSDate = NSDate()
-    @IBOutlet weak var lat: UITextField!
-    @IBOutlet weak var long: UITextField!
+            let formatter:NSDateFormatter = NSDateFormatter()
+    @IBOutlet weak var sunRiseLb: UILabel!
+    @IBOutlet weak var sunsetLb: UILabel!
+    @IBOutlet weak var lat: UILabel!
+    @IBOutlet weak var long: UILabel!
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -30,65 +33,63 @@ class ViewController: UIViewController , CLLocationManagerDelegate ,  UITextFiel
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let userLocation:CLLocation = locations[0]
         let long = userLocation.coordinate.longitude;
-        
-        print(userLocation.horizontalAccuracy)
         let lat = userLocation.coordinate.latitude;
-
+        
         calSunTimes(lat,f2: long)
+        cal()
     }
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-     if (segue.identifier == "toSunTimes"){
-        let sunTimeView = segue.destinationViewController as! SunTimeViewController
-        if lat.text != nil && long.text != nil{
-            let sunCalc:SunCalc = SunCalc.getTimes(date, latitude: lat.unwrappedTextDouble, longitude: long.unwrappedTextDouble)
-            let formatter:NSDateFormatter = NSDateFormatter()
-            formatter.dateFormat = "h:mm a"
-            let sunriseString:String = formatter.stringFromDate(sunCalc.sunrise)
-            let sunsetString:String = formatter.stringFromDate(sunCalc.sunset)
-            sunTimeView.setTime = "Sun Set: " + sunsetString
-            sunTimeView.riseTime = "Sun Rise: " + sunriseString
-            let bundleInfoDict: NSDictionary = NSBundle.mainBundle().infoDictionary!
-            let appName = bundleInfoDict["CFBundleName"] as! String
-            print (appName)
-        }
-     }
+    
+    
+    
+//    helper funcs 
+    
+    func cal(){
+        let sunCalc:SunCalc = SunCalc.getTimes(date, latitude: lat.text!.toDouble()!, longitude: long.text!.toDouble()!)
+        
+        formatter.dateFormat = "h:mm a"
+        sunRiseLb.text = formatter.stringFromDate(sunCalc.sunrise)
+        sunsetLb.text = formatter.stringFromDate(sunCalc.sunset)
     }
     func calSunTimes(f1: Double!, f2: Double!){
         self.locationManager.stopUpdatingLocation()
         lat.text = "\(f1)"
         long.text = "\(f2)"
     }
-
     
-//   important methods
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     if (segue.identifier == "toSunTimes"){
+
+     }
+    }
+
+
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         print("Error: " + error.localizedDescription)
         
     }
-    /**
-     * Called when 'return' key pressed. return NO to ignore.
-     */
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-    /**
-     * Called when the user click on the view (outside the UITextField).
-     */
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
 }
-
 extension String {
     func toDouble() -> Double? {
         return NSNumberFormatter().numberFromString(self)?.doubleValue
     }
 }
-extension UITextField {
-    var unwrappedTextDouble: Double {
-        return self.text?.toDouble() ?? 0
-    }
-}
+
+
 

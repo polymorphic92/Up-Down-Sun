@@ -49,23 +49,13 @@ class TodayViewController: UIViewController, NCWidgetProviding, CLLocationManage
     func widgetPerformUpdateWithCompletionHandler(completionHandler: ((NCUpdateResult) -> Void)) {
         completionHandler(NCUpdateResult.NewData)
     }
-//    @IBAction func openButtonPressed(){
-//        
-//        var url =  NSURL(string:"todayExtensionSample://")
-//        
-//        self.extensionContext?.openURL(url, completionHandler:{(success: Bool) -> Void in
-//            println("task done!")
-//        })
-//    }
     @IBAction func openAppbtn(sender: UIButton) {
         let myAppUrl = NSURL(string: "UpDownSun://")!
         print(myAppUrl)
         extensionContext?.openURL(myAppUrl, completionHandler: { (success) in
             if (!success) {
                 print("Need to fix")
-                
-                
-                
+ 
 
             }
         })

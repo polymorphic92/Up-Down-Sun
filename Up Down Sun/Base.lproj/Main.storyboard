@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yhi-QD-SeT">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Configure Time Settings-->
+        <!--Sun Times-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Up_Down_Sun" customModuleProvider="target" colorLabel="IBBuiltInLabel-Red" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UpDownSun" customModuleProvider="target" colorLabel="IBBuiltInLabel-Red" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,43 +23,46 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g8S-hD-oUe">
-                                <rect key="frame" x="156" y="206" width="428" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSS-wF-i5Z">
-                                <rect key="frame" x="20" y="159" width="77" height="21"/>
+                                <rect key="frame" x="20" y="523" width="298" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Q9-V2-qgS">
-                                <rect key="frame" x="156" y="278" width="137" height="30"/>
-                                <color key="backgroundColor" red="0.9882352941176471" green="0.70980392156862748" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Get Times">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="bee-zP-d98" kind="show" identifier="toSunTimes" id="0DM-1x-ag4"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Longitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1J-9M-epc">
-                                <rect key="frame" x="20" y="215" width="77" height="21"/>
+                                <rect key="frame" x="20" y="559" width="319" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O9n-2s-uGk">
-                                <rect key="frame" x="156" y="150" width="424" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SunRise" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bg0-DU-3L1">
+                                <rect key="frame" x="262" y="261" width="182" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SunSet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ats-C0-9Sc">
+                                <rect key="frame" x="262" y="317" width="182" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Cdl-HA-cWg"/>
+                                    <constraint firstAttribute="width" constant="182" id="UfL-Ju-mVZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bg0-DU-3L1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="197" id="8mp-GJ-wzI"/>
+                            <constraint firstItem="bg0-DU-3L1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="242" id="E6C-hR-ZNb"/>
+                            <constraint firstItem="ats-C0-9Sc" firstAttribute="top" secondItem="bg0-DU-3L1" secondAttribute="bottom" constant="35" id="L06-59-ZSt"/>
+                            <constraint firstItem="ats-C0-9Sc" firstAttribute="trailing" secondItem="bg0-DU-3L1" secondAttribute="trailing" id="PMr-U3-iGm"/>
+                            <constraint firstItem="ats-C0-9Sc" firstAttribute="leading" secondItem="bg0-DU-3L1" secondAttribute="leading" id="qD0-Ow-J3W"/>
+                            <constraint firstAttribute="bottom" secondItem="ats-C0-9Sc" secondAttribute="bottom" constant="262" id="u6s-bd-LBb"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Configure Time Settings" id="15Q-lH-jgt">
+                    <navigationItem key="navigationItem" title="Sun Times" id="15Q-lH-jgt">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="nqp-Dx-Nkj">
                             <connections>
                                 <segue destination="emg-bM-jCw" kind="show" identifier="mainToSettings" id="7Hq-Bz-U3E"/>
@@ -66,15 +70,17 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="lat" destination="O9n-2s-uGk" id="01N-XK-oAt"/>
-                        <outlet property="long" destination="g8S-hD-oUe" id="6oX-HU-KZr"/>
+                        <outlet property="lat" destination="VSS-wF-i5Z" id="6Zg-9E-uBf"/>
+                        <outlet property="long" destination="K1J-9M-epc" id="dEz-sz-X8s"/>
+                        <outlet property="sunRiseLb" destination="bg0-DU-3L1" id="SUb-YE-P0M"/>
+                        <outlet property="sunsetLb" destination="ats-C0-9Sc" id="Ryu-jx-ghd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1095" y="30"/>
         </scene>
-        <!--Settings-->
+        <!--Configure Settings-->
         <scene sceneID="VE1-ox-Nkm">
             <objects>
                 <viewController id="emg-bM-jCw" sceneMemberID="viewController">
@@ -91,7 +97,7 @@
                         <barButtonItem id="n1u-Tl-75v"/>
                         <barButtonItem id="d1J-Jf-ZAd"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" title="Settings" id="v44-B1-Bxh">
+                    <navigationItem key="navigationItem" title="Configure Settings" id="v44-B1-Bxh">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="hJc-g5-0As"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -99,53 +105,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5j-3L-iHV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1893" y="-738"/>
-        </scene>
-        <!--Sun Rise and Set Times-->
-        <scene sceneID="iCl-qX-FcT">
-            <objects>
-                <viewController id="bee-zP-d98" customClass="SunTimeViewController" customModule="Up_Down_Sun" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oOj-MG-TlU"/>
-                        <viewControllerLayoutGuide type="bottom" id="My7-vB-6sh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="omw-UI-qkG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun Rise: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnk-le-Hq0">
-                                <rect key="frame" x="232" y="134" width="188" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Bsf-2w-mez"/>
-                                    <constraint firstAttribute="width" constant="188" id="oRY-Bt-Vjb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun Set:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrA-Kf-Thy">
-                                <rect key="frame" x="232" y="198" width="65" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="dnk-le-Hq0" firstAttribute="leading" secondItem="ZrA-Kf-Thy" secondAttribute="leading" id="1Fq-LZ-bDn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dnk-le-Hq0" secondAttribute="trailing" constant="160" id="4D2-0x-roz"/>
-                            <constraint firstItem="ZrA-Kf-Thy" firstAttribute="top" secondItem="dnk-le-Hq0" secondAttribute="bottom" constant="43" id="aJk-q7-FkV"/>
-                            <constraint firstItem="dnk-le-Hq0" firstAttribute="top" secondItem="oOj-MG-TlU" secondAttribute="bottom" constant="70" id="kJY-9W-SaT"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Sun Rise and Set Times" id="uVi-tc-8W5"/>
-                    <connections>
-                        <outlet property="sunRiselb" destination="dnk-le-Hq0" id="LF7-ng-4Fm"/>
-                        <outlet property="sunSetlb" destination="ZrA-Kf-Thy" id="Sgp-6D-NBH"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6mP-br-ANs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1893" y="30"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mfW-BK-gWR">
