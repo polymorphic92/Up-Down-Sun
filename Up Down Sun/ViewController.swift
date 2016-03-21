@@ -12,7 +12,7 @@ import CelestialSpheres
 class ViewController: UIViewController , CLLocationManagerDelegate{
     let locationManager = CLLocationManager()
     let date:NSDate = NSDate()
-            let formatter:NSDateFormatter = NSDateFormatter()
+    let formatter:NSDateFormatter = NSDateFormatter()
     @IBOutlet weak var sunRiseLb: UILabel!
     @IBOutlet weak var sunsetLb: UILabel!
     @IBOutlet weak var lat: UILabel!
@@ -57,24 +57,9 @@ class ViewController: UIViewController , CLLocationManagerDelegate{
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-     if (segue.identifier == "toSunTimes"){
+     if (segue.identifier == "mainToSettings"){
 
      }
     }

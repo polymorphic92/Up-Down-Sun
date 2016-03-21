@@ -35,31 +35,33 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SunRise" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bg0-DU-3L1">
-                                <rect key="frame" x="262" y="261" width="182" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SunSet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ats-C0-9Sc">
-                                <rect key="frame" x="262" y="317" width="182" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7I-GP-E2T">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SunRise" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bg0-DU-3L1">
+                                        <rect key="frame" x="48" y="14" width="145" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SunSet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ats-C0-9Sc">
+                                        <rect key="frame" x="48" y="78" width="145" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.76115423952020167" green="0.98823529409999999" blue="0.10961106410946149" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Cdl-HA-cWg"/>
-                                    <constraint firstAttribute="width" constant="182" id="UfL-Ju-mVZ"/>
+                                    <constraint firstAttribute="height" constant="128" id="Yw9-kb-aae"/>
+                                    <constraint firstAttribute="width" constant="240" id="ZvX-DK-3Vi"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="bg0-DU-3L1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="197" id="8mp-GJ-wzI"/>
-                            <constraint firstItem="bg0-DU-3L1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="242" id="E6C-hR-ZNb"/>
-                            <constraint firstItem="ats-C0-9Sc" firstAttribute="top" secondItem="bg0-DU-3L1" secondAttribute="bottom" constant="35" id="L06-59-ZSt"/>
-                            <constraint firstItem="ats-C0-9Sc" firstAttribute="trailing" secondItem="bg0-DU-3L1" secondAttribute="trailing" id="PMr-U3-iGm"/>
-                            <constraint firstItem="ats-C0-9Sc" firstAttribute="leading" secondItem="bg0-DU-3L1" secondAttribute="leading" id="qD0-Ow-J3W"/>
-                            <constraint firstAttribute="bottom" secondItem="ats-C0-9Sc" secondAttribute="bottom" constant="262" id="u6s-bd-LBb"/>
+                            <constraint firstItem="B7I-GP-E2T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UXD-kb-rNO"/>
+                            <constraint firstItem="B7I-GP-E2T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fWV-lh-cMU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sun Times" id="15Q-lH-jgt">
@@ -91,15 +93,46 @@
                     <view key="view" contentMode="scaleToFill" id="ckd-90-DZk">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ukb-zk-CoW">
+                                <rect key="frame" x="20" y="321" width="560" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="480223394.69811398">
+                                    <!--2016-03-21 03:23:14 +0000-->
+                                </date>
+                            </datePicker>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ht2-M2-Ycr">
+                                <rect key="frame" x="20" y="85" width="560" height="196"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZm-xS-4De">
+                                        <rect key="frame" x="259" y="87" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.98844150641025641" green="0.98844150641025641" blue="0.98844150641025641" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.44893540915821961" blue="0.072042304235105603" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="YZm-xS-4De" firstAttribute="centerY" secondItem="ht2-M2-Ycr" secondAttribute="centerY" id="N1F-IY-OWP"/>
+                                    <constraint firstItem="YZm-xS-4De" firstAttribute="centerX" secondItem="ht2-M2-Ycr" secondAttribute="centerX" id="k29-gO-Wrw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ht2-M2-Ycr" firstAttribute="trailing" secondItem="Ukb-zk-CoW" secondAttribute="trailing" id="4v6-T1-Z5L"/>
+                            <constraint firstItem="ht2-M2-Ycr" firstAttribute="top" secondItem="grU-7U-aa4" secondAttribute="bottom" constant="21" id="5yL-tP-LhE"/>
+                            <constraint firstItem="ht2-M2-Ycr" firstAttribute="leading" secondItem="Ukb-zk-CoW" secondAttribute="leading" id="7YF-WR-HvQ"/>
+                            <constraint firstItem="Brn-5W-bLR" firstAttribute="top" secondItem="Ukb-zk-CoW" secondAttribute="bottom" constant="19" id="D0B-MJ-Fif"/>
+                            <constraint firstItem="ht2-M2-Ycr" firstAttribute="leading" secondItem="ckd-90-DZk" secondAttribute="leadingMargin" id="HW3-fk-bBu"/>
+                            <constraint firstItem="Ukb-zk-CoW" firstAttribute="centerX" secondItem="ckd-90-DZk" secondAttribute="centerX" id="lAJ-yQ-91f"/>
+                            <constraint firstItem="Ukb-zk-CoW" firstAttribute="top" secondItem="ht2-M2-Ycr" secondAttribute="bottom" constant="40" id="lph-fK-zcd"/>
+                        </constraints>
                     </view>
                     <toolbarItems>
                         <barButtonItem id="n1u-Tl-75v"/>
                         <barButtonItem id="d1J-Jf-ZAd"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" title="Configure Settings" id="v44-B1-Bxh">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="hJc-g5-0As"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Configure Settings" id="v44-B1-Bxh"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5j-3L-iHV" userLabel="First Responder" sceneMemberID="firstResponder"/>
